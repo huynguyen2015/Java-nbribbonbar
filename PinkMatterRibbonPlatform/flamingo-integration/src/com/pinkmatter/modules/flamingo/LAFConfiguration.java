@@ -27,7 +27,6 @@
  * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 package com.pinkmatter.modules.flamingo;
 
 /**
@@ -39,6 +38,9 @@ class LAFConfiguration {
     public static Object[] getClassDefaults() {
         return new Object[]{
                     "RibbonApplicationMenuButtonUI", "com.pinkmatter.modules.flamingo.NbRibbonApplicationMenuButtonUI"
-                };
+//                    Replace the above line with the below, to use Bruce Schubert's rewritten application menu:                     
+//                    "RibbonUI", "com.pinkmatter.modules.flamingo.FileRibbonUI",
+//                    "RibbonApplicationMenuButtonUI", "com.pinkmatter.modules.flamingo.FileRibbonApplicationMenuButtonUI"
+        };
     }
 }
